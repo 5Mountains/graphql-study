@@ -31,3 +31,12 @@ export const GET_MOVIE_BY_NAME = gql`
     }
   }
 `;
+
+export const CREATE_USER_MUTATION = gql`
+  mutation CreateUser($input: CreateUserInput!) {
+    createUser(input: $input) {
+      name
+      id
+    }
+  }
+`;
